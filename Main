@@ -8,6 +8,7 @@ def generate():
     win = Tk()
     win.geometry('2000x1000')
     def onClick():
+        #Prajval start
         def send_sms():
             account_sid = side.get()
             auth_token = toke.get()
@@ -31,6 +32,7 @@ def generate():
         
         
         
+        
         user_input = (inp.get())    
         if user_input:  
             user_input=int(user_input)  
@@ -45,6 +47,7 @@ def generate():
                 password_list = list(password)
                 random.shuffle(password_list)
                 shuffled_password = ''.join(password_list)
+        #Prajval end
                 ww=Text(win, height=2, borderwidth=0)
                 ww.insert(1.0,shuffled_password)
                 ww.place(x=500, y=200)
